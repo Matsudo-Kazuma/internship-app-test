@@ -2,17 +2,35 @@
   <div class="fill-height px-2">
     <h1>音声受付アプリ</h1>
     <div class="d-flex align-center">
-      <v-btn color="primary lighten-2" @click="init()"> Speech </v-btn>
-      <v-btn color="error lighten-2" @click="clickStop()"> Stop </v-btn>
+      <v-btn
+        color="primary lighten-2"
+        @click="init()"
+      > Speech </v-btn>
+      <v-btn
+        color="error lighten-2"
+        @click="clickStop()"
+      > Stop </v-btn>
     </div>
     <div class="face-component">
-      <img class="face" :src="imageSrc" />
-      <div v-if="responseComment" class="says">
+      <img
+        class="face"
+        :src="imageSrc"
+      />
+      <div
+        v-if="responseComment"
+        class="says"
+      >
         <p>{{ responseComment }}</p>
       </div>
     </div>
-    <div v-if="displayChart" class="chart-component">
-      <chart-bar :chart-data="chartData" :options="options" />
+    <div
+      v-if="displayChart"
+      class="chart-component"
+    >
+      <chart-bar
+        :chart-data="chartData"
+        :options="options"
+      />
     </div>
   </div>
 </template>
@@ -25,7 +43,7 @@ import openMouse from "@/assets/mouse_open.png"
 import ChartBar from "@/components/molecules/ChartBar.vue"
 import "chartjs-plugin-colorschemes"
 
-import { Component, Vue, Watch } from "vue-property-decorator"
+import { Component, Vue } from "vue-property-decorator"
 
 @Component({
   name: "Chat",

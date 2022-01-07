@@ -18,7 +18,10 @@
         label="Select"
       ></v-select>
       <div class="d-flex align-center">
-        <v-btn color="primary lighten-2" @click="speak()"> Speech </v-btn>
+        <v-btn
+          color="primary lighten-2"
+          @click="speak()"
+        > Speech </v-btn>
       </div>
     </div>
   </div>

@@ -1,15 +1,26 @@
 <template>
-  <v-toolbar dark color="primary">
-    <v-toolbar-title class="white--text"
-      >システムコンサルタント インターン</v-toolbar-title
-    >
+  <v-toolbar
+    dark
+    color="primary"
+  >
+    <v-toolbar-title class="white--text">システムコンサルタント インターン</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn icon @click="handleClickHome()">
+    <v-btn
+      icon
+      @click="handleClickHome()"
+    >
       <v-icon>home</v-icon>
     </v-btn>
-    <v-menu left :nudge-width="100" offset-y>
+    <v-menu
+      left
+      :nudge-width="100"
+      offset-y
+    >
       <template v-slot:activator="{ on }">
-        <v-btn icon v-on="on">
+        <v-btn
+          icon
+          v-on="on"
+        >
           <v-icon>apps</v-icon>
         </v-btn>
       </template>

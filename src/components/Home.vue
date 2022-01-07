@@ -1,18 +1,21 @@
 <template>
-<div class="fill-height px-2">
-  <div class="slide-container py-4">
-    <div class="slide-component">
-      <v-carousel :height="560" :cycle="false">
-        <v-carousel-item
-          v-for="(item,i) in items"
-          :key="i"
-          :src="item.src"
-          class="slide-size"
-        ></v-carousel-item>
-      </v-carousel>
+  <div class="fill-height px-2">
+    <div class="slide-container py-4">
+      <div class="slide-component">
+        <v-carousel
+          :height="560"
+          :cycle="false"
+        >
+          <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            class="slide-size"
+          ></v-carousel-item>
+        </v-carousel>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script lang="ts">
@@ -114,11 +117,16 @@ export default class Home extends Vue {
 </script>
 
 <style lang="stylus" scoped>
-.slide-container
+.slide-container {
   display: flex;
-  justify-content: center
-.slide-component
-  width: 900px
-.slide-size
-  height: 500px
+  justify-content: center;
+}
+
+.slide-component {
+  width: 900px;
+}
+
+.slide-size {
+  height: 500px;
+}
 </style>

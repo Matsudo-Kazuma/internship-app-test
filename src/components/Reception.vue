@@ -2,8 +2,14 @@
   <div class="fill-height px-2 py-2">
     <h1>受付アプリ</h1>
     <div class="d-flex align-center">
-      <v-btn color="primary lighten-2" @click="init()"> Start </v-btn>
-      <v-btn color="error lighten-2" @click="clickStop()"> Stop </v-btn>
+      <v-btn
+        color="primary lighten-2"
+        @click="init()"
+      > Start </v-btn>
+      <v-btn
+        color="error lighten-2"
+        @click="clickStop()"
+      > Stop </v-btn>
     </div>
     <div class="d-flex align-center">
       <div class="d-flex justify-center display-1">
@@ -11,12 +17,22 @@
       </div>
       <div class="d-flex align-center display-1">
         <span class="ma-0">喫煙:</span>
-        <v-checkbox readonly color="green" v-model="isSmoking" />
+        <v-checkbox
+          readonly
+          color="green"
+          v-model="isSmoking"
+        />
       </div>
     </div>
     <div class="face-component">
-      <img class="face" :src="imageSrc" />
-      <div v-if="responseComment" class="says">
+      <img
+        class="face"
+        :src="imageSrc"
+      />
+      <div
+        v-if="responseComment"
+        class="says"
+      >
         <p>{{ responseComment }}</p>
       </div>
     </div>

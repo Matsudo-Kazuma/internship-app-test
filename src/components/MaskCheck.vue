@@ -2,14 +2,26 @@
   <div class="fill-height px-2">
     <h1>マスク判定アプリ</h1>
     <div class="d-flex align-center">
-      <v-btn color="primary lighten-2" @click="init()"> Start </v-btn>
-      <v-btn color="error lighten-2" @click="clickStop()"> Stop </v-btn>
+      <v-btn
+        color="primary lighten-2"
+        @click="init()"
+      > Start </v-btn>
+      <v-btn
+        color="error lighten-2"
+        @click="clickStop()"
+      > Stop </v-btn>
     </div>
     <div class="webcam-result-container py-4">
       <div class="webcam-container">
         <div id="webcam-canvas"></div>
-        <div v-if="displayChart" class="chart-component">
-          <chart-bar :chart-data="chartData" :options="options" />
+        <div
+          v-if="displayChart"
+          class="chart-component"
+        >
+          <chart-bar
+            :chart-data="chartData"
+            :options="options"
+          />
         </div>
       </div>
       <div class="d-flex display-2 py-4">{{ message }}</div>
