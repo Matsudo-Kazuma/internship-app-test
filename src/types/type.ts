@@ -1,1 +1,1 @@
-export type processType = "human" | "mask";
+export type processType = "human" | "mask"

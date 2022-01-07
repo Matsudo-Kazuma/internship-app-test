@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "internship-app-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,29 +11,25 @@
     "@teachablemachine/image": "0.8.5",
     "@tensorflow-models/speech-commands": "0.4.0",
     "@tensorflow/tfjs": "1.3.1",
-    "@typescript-eslint/eslint-plugin": "4.18.0",
-    "@typescript-eslint/eslint-plugin-tslint": "4.19.0",
-    "@typescript-eslint/parser": "4.18.0",
-    "@vue/cli-plugin-babel": "4.5.15",
+    "chart": "^0.1.2",
     "chart.js": "2.8.0",
     "chartjs-plugin-colorschemes": "0.4.0",
-    "core-js": "^3.6.5",
-    "eslint": "6.1.0",
-    "prettier": "2.5.1",
-    "tslib": "2.3.1",
-    "typescript": "4.1.5",
-    "vue": "2.5.22",
+    "core-js": "^3.9.1",
+    "stylus": "^0.56.0",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.11",
     "vue-chartjs": "3.4.0",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "8.4.2",
     "vue-router": "^3.2.0",
-    "vuetify": "1.5.0",
+    "vuetify": "^1.5.24",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.9.35",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-babel": "^4.5.15",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
@@ -41,12 +37,15 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "jshint": "^2.13.3",
     "prettier": "^2.2.1",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "tslib": "^2.3.1",
     "typescript": "~4.1.5",
     "vue-cli-plugin-vuetify": "~2.4.5",
     "vue-template-compiler": "^2.6.11",
@@ -67,14 +66,23 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "plugins": ["prettier"],
+    "rules": {
+      "no-empty-function": "off",
+      "no-undef": "off",
+      "no-irregular-whitespace": "off",
+      "semi": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "prettier/prettier": "off"
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "keywords": [],
-  "description": "",
-  "type": "module"
+  ]
 }

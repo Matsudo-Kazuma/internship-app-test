@@ -1,17 +1,14 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import MaskCheckView from "../views/MaskCheckView.vue";
-import TextToSpeechView from "../views/TextToSpeechView.vue";
-import ChatView from "../views/ChatView.vue";
+import Vue from "vue"
+import VueRouter, { RouteConfig } from "vue-router"
+import HomeView from "../views/HomeView.vue"
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "HomeView",
-    component: HomeView
+    component: HomeView,
   },
   {
     path: "/maskcheckview",
@@ -20,7 +17,7 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/MaskCheckView.vue")
+      import(/* webpackChunkName: "about" */ "../views/MaskCheckView.vue"),
   },
   {
     path: "/texttospeechview",
@@ -29,7 +26,7 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/TextToSpeechView.vue")
+      import(/* webpackChunkName: "about" */ "../views/TextToSpeechView.vue"),
   },
   {
     path: "/chatview",
@@ -38,7 +35,7 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ChatView.vue")
+      import(/* webpackChunkName: "about" */ "../views/ChatView.vue"),
   },
   {
     path: "/receptionview",
@@ -47,14 +44,14 @@ const routes: Array<RouteConfig> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ReceptionView.vue")
-  }
-];
+      import(/* webpackChunkName: "about" */ "../views/ReceptionView.vue"),
+  },
+]
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
-});
+  routes,
+})
 
-export default router;
+export default router

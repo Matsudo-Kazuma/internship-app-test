@@ -3,18 +3,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator"
 
 @Component({
   name: "Home",
-  components: {
-  },
+  components: {},
 })
 export default class Home extends Vue {
   // 変数
-  message: string = ""
-  count: number = 0
-  isDisplayMessage: boolean = false
+  message = ""
+  count = 0
+  isDisplayMessage = false
   // 関数
   change() {
     this.message = "こんにちは"
@@ -24,6 +23,4 @@ export default class Home extends Vue {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
