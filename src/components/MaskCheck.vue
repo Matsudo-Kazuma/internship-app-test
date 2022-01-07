@@ -122,7 +122,7 @@ export default class MaskCheck extends Vue {
   async loop() {
     if (this.isStop) {
       await this.webcam.pause()
-      // return;
+      return;
     }
     this.webcam.update() // update the webcam frame
     await this.predict()

@@ -17,6 +17,7 @@
     "core-js": "^3.9.1",
     "stylus": "^0.56.0",
     "stylus-loader": "^3.0.2",
+    "tslib": "^2.3.1",
     "vue": "^2.6.11",
     "vue-chartjs": "3.4.0",
     "vue-class-component": "^7.2.3",
@@ -45,7 +46,6 @@
     "prettier": "^2.2.1",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
-    "tslib": "^2.3.1",
     "typescript": "~4.1.5",
     "vue-cli-plugin-vuetify": "~2.4.5",
     "vue-template-compiler": "^2.6.11",
@@ -66,7 +66,9 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "no-empty-function": "off",
       "no-undef": "off",
